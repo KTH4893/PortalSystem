@@ -1,0 +1,59 @@
+@charset "UTF-8";
+#index{
+		border: 0px solid blue; width:1280px; height: 1000px; margin: 0 auto;
+	}
+	#index-box{
+		border: 0px solid red; width: 920px; height: 360px; margin: 0 auto; margin-top: 250px;
+	}
+	#index-box-box1{
+		border: 0px solid black; width: 96%; height: 60px; text-align: right; line-height: 60px;
+		padding: 2%;
+	}
+	#index-box-box2{
+		border: 0px solid black; width: 88%; height: 300px; background-color:#094a9a;
+		padding-left: 6%; padding-right: 6%; padding-bottom: 10px;
+	}
+	#login{
+		background-color: #094a9a; width: 59%; height: 170px; float: left;
+	}
+	#login-box{
+		width: 90%; height: 90%; border: 0px solid red;
+	}
+	#login-box td{
+		border: 0px solid black; 
+	}
+	a{
+		text-decoration: none;	color: white;	font-size: 11px;
+	}
+	input[type="text"],input[type="password"]{
+		height: auto; line-height: normal; width: 95%; padding-bottom: 3px; padding-top: 3px;
+	}
+	.normal-text{
+		font-size: 17px; width: 25%;
+	}
+	input[type="submit"]{
+		width: 100%; height: 80%; background-color: white; font-weight: bold; border: 1px solid #dfdfdf;
+		cursor: pointer;
+	}
+	.btns-box{
+		border: 0px solid red; width: 43%; height: 50%;	float: right; text-align: center;
+		line-height: 60px;
+	}
+	#btn-box{
+		background-color: ; width: 40%; height: 130px; float: left;	border-left: 1px solid #315a9b;
+	}
+	.btns{
+		text-align: left; background-color: white; width: 95%; height: 60%;	font-weight: bold;
+	}
+	.text1{
+		font-size: 42px; font-weight: bold;
+	}
+	.text2{
+		font-size: 18px; font-weight: bold; color: #4272ae;
+	}
+	.textbox{
+		border: 0px solid blue; width: 100%; height: 130px;
+	}
+	.text3{
+		font-size: 42px; font-weight: bold; text-align: left; line-height: 130px; color: white;
+	}

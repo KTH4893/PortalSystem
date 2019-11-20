@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-3.2.0.min.js" ></script>
+<style>
+	#index{
+		border: 0px solid blue; width:1280px; height: 1000px; margin: 0 auto;
+	}
+	#index-box{
+		border: 0px solid red; width: 920px; height: 360px; margin: 0 auto; margin-top: 250px;
+	}
+	#index-box-box1{
+		border: 0px solid black; width: 96%; height: 60px; text-align: right; line-height: 60px;
+		padding: 2%;
+	}
+	#index-box-box2{
+		border: 0px solid black; width: 88%; height: 300px; background-color:#094a9a;
+		padding-left: 6%; padding-right: 6%; padding-bottom: 10px;
+	}
+	#login{
+		background-color: #094a9a; width: 59%; height: 170px; float: left;
+	}
+	#login-box{
+		width: 90%; height: 90%; border: 0px solid red;
+	}
+	#login-box td{
+		border: 0px solid black; 
+	}
+	a{
+		text-decoration: none;	color: white;	font-size: 11px;
+	}
+	input[type="text"],input[type="password"]{
+		height: auto; line-height: normal; width: 95%; padding-bottom: 3px; padding-top: 3px;
+	}
+	.normal-text{
+		font-size: 17px; width: 25%;
+	}
+	input[type="submit"]{
+		width: 100%; height: 80%; background-color: white; font-weight: bold; border: 1px solid #dfdfdf;
+		cursor: pointer;
+	}
+	.btns-box{
+		border: 0px solid red; width: 43%; height: 50%;	float: right; text-align: center;
+		line-height: 60px;
+	}
+	#btn-box{
+		background-color: ; width: 40%; height: 130px; float: left;	border-left: 1px solid #315a9b;
+	}
+	.btns{
+		text-align: left; background-color: white; width: 95%; height: 60%;	font-weight: bold;
+	}
+	.text1{
+		font-size: 42px; font-weight: bold;
+	}
+	.text2{
+		font-size: 18px; font-weight: bold; color: #4272ae;
+	}
+	.textbox{
+		border: 0px solid blue; width: 100%; height: 130px;
+	}
+	.text3{
+		font-size: 42px; font-weight: bold; text-align: left; line-height: 130px; color: white;
+	}
+</style>	
+</head>
+<body>
+	<div id="index">
+		<div id="index-box">
+			<div id="index-box-box1">
+				<span class="text1">학사 정보 시스템</span>
+				<span class="text2">University Information System</span>
+			</div>
+			<div id="index-box-box2" >
+				<div class="textbox">
+					<span class="text3">LOGIN</span>
+				</div>
+				<form action="#" method="post">
+				<div id="login">
+					<table id="login-box" style="color: white;">
+						<tr>
+							<td class="normal-text">아이디(학번)</td>
+							<td><input type="text"></td>
+							<td rowspan="2"><input type="submit" value="로그인"></td>
+						</tr>
+						<tr>
+							<td class="normal-text">포털비밀번호</td>
+							<td><input type="password"></td>
+						</tr>
+						<tr>
+							<td colspan="3">
+								<a href="#">아이디 / 비밀번호 찾기</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				</form>
+				<div id="btn-box">
+					<div class="btns-box"><button class="btns" onclick="location.href='#'">버튼2</button></div>
+					<div class="btns-box"><button class="btns" onclick="location.href='#'">버튼1</button></div>
+					<div class="btns-box"><button class="btns" onclick="location.href='#'">버튼4</button></div>
+					<div class="btns-box"><button class="btns" onclick="location.href='#'">버튼3</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			// input css변경하기
+			$('input[type="text"],input[type="password"]').focus(function(){
+				$(this).css('backgroundColor','#e0e0e0');
+			});
+			$('input[type="text"],input[type="password"]').blur(function(){
+				$(this).css('backgroundColor','white');
+			});	
+		});
+	</script>
+</body>
+</html>
