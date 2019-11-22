@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="admin">
+  <select id="loginAdmin" parameterType="Admin" resultType="Admin">
+		select admin_id as adminId,
+			admin_pw as adminPw
+		 from admin where admin_id = #{adminId} and admin_pw = #{adminPw} 
+  </select>
+</mapper>

@@ -19,17 +19,17 @@
 				<div class="textbox">
 					<span class="text3">LOGIN</span>
 				</div>
-				<form action="#" method="post">
+				<form action="/login.do" method="post">
 				<div id="login">
 					<table id="login-box" style="color: white;">
 						<tr>
 							<td class="normal-text">아이디(학번)</td>
-							<td><input type="text"></td>
-							<td rowspan="2"><input type="submit" value="로그인"></td>
+							<td><input type="text" name="adminId"></td>
+							<td rowspan="2"><input type="submit" value = "로그인"></td>
 						</tr>
 						<tr>
 							<td class="normal-text">포털비밀번호</td>
-							<td><input type="password"></td>
+							<td><input name="adminPw" type="password"></td>
 						</tr>
 						<tr>
 							<td colspan="3">

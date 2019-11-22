@@ -7,5 +7,6 @@
 	</settings>
 	<typeAliases>
 		<typeAlias type = "kr.ac.THeVeloper.student.model.vo.Student" alias="Student"/>
+		<typeAlias type = "kr.ac.THeVeloper.admin.model.vo.Admin" alias="Admin"/>
 	</typeAliases>
 </configuration>

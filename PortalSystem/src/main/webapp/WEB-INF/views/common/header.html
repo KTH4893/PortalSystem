@@ -6,137 +6,70 @@
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.0.min.js" ></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
 <style>
-	#nav1{
-		margin: 0 auto;	padding-left: 0px; padding-top: 20px;
+	#nav1{margin: 0 auto;	padding-left: 0px; padding-top: 20px;}
+	#nav1>li{border: 0px solid black; width: 80px; height: 20px; line-height: 20px;
+		list-style: none; float: left; color:#7b7d7e; text-align: center; margin-left: 20px; }
+	#nav1-box1{	margin: 0 auto; border: 1px solid black; width: 100px; height: 50px; background-color: white;padding: 0; margin-top: 10px; position: absolute;}
+	#nav1-box1>li{	color: black; list-style: none; text-align: left; padding-left: 10px; padding-bottom: 5px;
+		font-size: 12px;}
+	.cursors{cursor: pointer;}
+	#nav1-box2{	margin: 0 auto; border: 1px solid black; width: 80px; height: 25px; background-color: white; position: absolute;
+		padding: 0; margin-top: 10px; line-height: 25px; margin-left: 10px; padding-left: 5px;}
+	#nav1-box2>li{color: black; list-style: none; text-align: left; padding-left: 10px; padding-bottom: 5px;
+		font-size: 12px;}
+	#nav1-box3{	margin: 0 auto; border: 1px solid black; width: 80px; height: 25px; background-color: white; position: absolute;
+		padding: 0; margin-top: 10px; line-height: 25px; margin-left: 10px; padding-left: 5px;}
+	#nav1-box3>li{	color: black; list-style: none; text-align: left; padding-left: 10px; padding-bottom: 5px;
+		font-size: 12px; }
+	.clickOn{text-decoration: underline; color: #0a4a9b;}
+	.search1{width: 97%; margin-top: 2px; padding-top: 1px; padding-bottom: 2px; height: 28px; margin-left: 2px;
+		border: 0;}
+	.logotext{color:#7b7d7e; font-weight: bold; margin: 0 auto; padding: 0; border: 0px solid blue;
+		float: left; padding-top: 5px;	padding-bottom: 5px; width: 100%; text-align: center;}	
+	#nav2{padding: 0;	margin: 0 auto; }
+	#side-box li{list-style: none;width: 48%; float: left; text-align: center; height: 100%; line-height: 30px;
+		font-size: 13px; border: 0px solid black; padding: 1px; }
+	#side-box{width: 100%; height: 35px; border: 0px solid red; background-color: #033e6b; float:left; color: #6c839b;
 	}
-	#nav1>li{
-		border: 0px solid black; width: 80px; height: 20px; line-height: 20px;
-		list-style: none; float: left; color:#7b7d7e; text-align: center; margin-left: 20px; 
+	a{text-decoration: none; color: black; cursor: inherit;}
+	#header{width: 100%; height: 65px; border: 0px solid black;}
+	#logo{width: 10%; height: 100%; border: 0px solid red; float: left; background-color: #e9f3fc;}
+	#logo-box1{	width: 30%;height:100%;float: left;	background-size: cover;
+		background-image: url(../../../resources/img/header/THeVeloperLogo2.jpg);}
+	#logo-box2{	width: 65%; height:100%;float: left; border: 0px solid red;	}
+	#header-box{width: 90%; height: 100%; border: 0px solid green;float: left;	}
+	#header-box-box1{width: 70%; height: 100%; background-color:#e9f3fc; float: left;}
+	#header-box-box2{width: 30%; height: 100%; background-color: #e9f3fc; float: left; text-align: right;}
+	#login-info{font-size: 8px; }
+	#user-info{	height: 25px; border: 1px solid #0f3668; margin-top: 10px; float: left; width: 30%; background-color: white;border-radius: 20px 0 0 20px; font-size: 12px; text-align: left; padding-left: 10px; line-height: 25px;	}
+	.logout-btn{width: 8%; height: 25px; float: left; border: 1px solid #0f3668; margin-top: 10px; border-radius: 0 20px 20px 0;background-color: #0f3668; text-align: center;}
+	#nav3>ul{padding: 0;margin: 0px; color: #d3ecff; font-size: 14px; }
+	#nav3>ul>li{list-style: none; padding-left: 30px; background-color:#3a4450;border: 0px solid black;	}
+	#nav3{	width: 100%; height: auto; border: 0px solid red; float: left; cursor: pointer;	}
+	#info-blank{width: 59%; height: 25px; float: left; border: 0px solid black; margin-top: 10px;}
+	#side-nav{width: 11%; height: 980px; border: 0px solid blue; float: left; background-color: #005698;}
+	#search-box{width: 100%; height: 35px; border: 0px solid red; float:left;}
+	#search-box-box1{width: 80%;height: 100%; background-color: #005698; float: left;}
+	#search-box-box2{width: 20%;height: 100%; background-color:white; float: left; color: #6b6b6e;}
+	#nav1-list{	width: 100%; height: 25px; border: 0px solid red; background-color: #c0c7d3; 
+		float:left; color:#183150; font-size: 12px; font-weight: bold; text-align: center; line-height: 25px;}
+	body{margin: 0 auto;}
+	#main-background-img{border: 0px solid black; width: 89%; height: 950px; float: left;
+		background-image: url(../../../resources/img/header/myLogo_highquality.png);
+		background-repeat: no-repeat; background-position: center center; background-size: 1000px 1000px;
+		margin-top: 35px;
 	}
-	#nav1-box1{
-		margin: 0 auto; border: 1px solid black; width: 100px; height: 50px; background-color: white;
-		padding: 0; margin-top: 10px; 
+	.Onclick1{	background-color:#005698;color: white;}
+	#header-box-box3{
+		width: 100%; height: 35px; border: 0px solid black; float: left; background-color: #e9f3fc;
 	}
-	#nav1-box1>li{
-		color: black; list-style: none; text-align: left; padding-left: 10px; padding-bottom: 5px;
-		font-size: 12px;
-	}
-	.cursors{
-		cursor: pointer;
-	}
-	#nav1-box2{
-		margin: 0 auto; border: 1px solid black; width: 80px; height: 25px; background-color: white;
-		padding: 0; margin-top: 10px; line-height: 25px; margin-left: 10px; padding-left: 5px;
-	}
-	#nav1-box2>li{
-		color: black; list-style: none; text-align: left; padding-left: 10px; padding-bottom: 5px;
-		font-size: 12px;
-	}
-	#nav1-box3{
-		margin: 0 auto; border: 1px solid black; width: 80px; height: 25px; background-color: white;
-		padding: 0; margin-top: 10px; line-height: 25px; margin-left: 10px; padding-left: 5px;
-	}
-	#nav1-box3>li{
-		color: black; list-style: none; text-align: left; padding-left: 10px; padding-bottom: 5px;
-		font-size: 12px; 
-	}
-	.clickOn{
-		text-decoration: underline; color: #0a4a9b;
-	}
-	.search1{
-		width: 97%; margin-top: 2px; padding-top: 1px; padding-bottom: 2px; height: 28px; margin-left: 2px;
-		border: 0;
-	}
-	.logotext{
-		color:#7b7d7e; font-weight: bold; margin: 0 auto; padding: 0; border: 0px solid blue;
-		float: left; padding-top: 5px;	padding-bottom: 5px; width: 100%; text-align: center;
-	}
-	#nav2{
-		padding: 0;	margin: 0 auto;
-	}
-	#nav2>li{
-		list-style: none; width: 50%; float: left; text-align: center; height: 100%; line-height: 30px;
-		color: white; font-size: 13px;
-	}
-	#nav2>li:last-child{
-		background-color: #033e6b; color: #6c839b;
-	}
-	a{
-		text-decoration: none; color: black; cursor: inherit;
-	}
-	#header{
-		width: 1920px; height: 65px; border: 0px solid black;
-	}
-	#logo{
-		width: 200px; height: 100%; border: 0px solid red; float: left; background-color: #e9f3fc;
-	}
-	#logo-box1{
-		width: 30%;height:100%;float: left;
-	}
-	#logo-box2{
-		width: 65%; height:100%;float: left; border: 0px solid red;
-	}
-	#header-box{
-		width: 1720px; height: 100%; border: 0px solid green;float: left;
-	}
-	#header-box-box1{
-		width: 70%; height: 100%; background-color:#e9f3fc; float: left;
-	}
-	#header-box-box2{
-		width: 30%; height: 100%; background-color: #e9f3fc; float: left; text-align: right;
-	}
-	#login-info{
-		font-size: 8px; 
-	}
-	#user-info{
-		height: 25px; border: 1px solid #0f3668; margin-top: 10px; float: left; width: 30%; background-color: white;
-		border-radius: 20px 0 0 20px; font-size: 12px; text-align: left; padding-left: 10px; line-height: 25px;
-	}
-	.logout-btn{
-		width: 8%; height: 25px; float: left; border: 1px solid #0f3668; margin-top: 10px; border-radius: 0 20px 20px 0;
-		background-color: #0f3668; text-align: center;
-	}
-
-	#nav3>ul{
-		padding: 0;margin: 0px; color: #d3ecff; font-size: 14px; 
-	}
-	#nav3>ul>li{
-		list-style: none; padding-left: 30px; background-color:#3a4450;
-		border: 0px solid black;
-	}
-	#nav3{
-		width: 100%; height: auto; border: 0px solid red; float: left; cursor: pointer;
-	}
-	#info-blank{
-		width: 59%; height: 25px; float: left; border: 0px solid black; margin-top: 10px;
-	}
-	#side-nav{
-		width: 200px; height: 900px; border: 0px solid blue; float: left; background-color: #005698;
-	}
-	#side-box{
-		width: 100%; height: 35px; border: 0px solid red; background-color: #005698; float:left;
-	}
-	#search-box{
-		width: 100%; height: 35px; border: 0px solid red; float:left;
-	}
-	#search-box-box1{
-		width: 80%;height: 100%; background-color: #005698; float: left;
-	}
-	#search-box-box2{
-		width: 20%;height: 100%; background-color:white; float: left; color: #6b6b6e;
-	}
-	#nav1-list{
-		width: 100%; height: 25px; border: 0px solid red; background-color: #c0c7d3; 
-		float:left; color:#183150; font-size: 12px; font-weight: bold; text-align: center; line-height: 25px;
-	}
-
 </style>
 </head>
 <body>
 <header>
 	<div id="header">
 		<div id="logo">
-			<div id="logo-box1">로고</div>	
+			<div id="logo-box1"></div>
 			<div id="logo-box2">
 				<p class="logotext" style="color: black;">TheVeloper</p>
 				<p class="logotext">통합 정보 시스템</p>
@@ -147,18 +80,18 @@
 				<ul id="nav1">
 					<li><span class="cursors list1">공통</span>
 						<ul id="nav1-box1" class="nav-box1">
-							<li>· <span class="cursors">시스템공통</span></li>
-							<li>· <span class="cursors">시스템관리</span></li>
+							<li>· <span class="data1 cursors">시스템공통</span></li>
+							<li>· <span class="data1 cursors">시스템관리</span></li>
 						</ul>
 					</li>
 					<li><span class="cursors list1">학사행정</span>
 						<ul id="nav1-box2" class="nav-box1">
-							<li>· <span class="cursors">학적</span></li>
+							<li>· <span class="data1 cursors">학적</span></li>
 						</ul>
 					</li>
 					<li><span class="cursors list1">일반행정</span>
 						<ul id="nav1-box3" class="nav-box1">
-							<li>· <span class="cursors">시설</span></li>
+							<li>· <span class="data1 cursors">시설</span></li>
 						</ul>
 					</li>
 				</ul>
@@ -170,13 +103,16 @@
 				<div class="cursors logout-btn">
 				<a href="#" style="color: white;"><i class="fas fa-sign-out-alt"></i></a></div>
 			</div>
+			<div id="header-box-box3"></div>
+			
+			
 		</div>
 	</div>
 	<div id="side-nav">
 				<div id="side-box">
 					<ul id="nav2">
-						<li><span class="cursors">공통바꾸기</span></li>
-						<li><span class="cursors">마이메뉴</span></li>
+						<li class="Onclick1"><span class="cursors">공통</span></li>
+						<li><span class="cursors">관리자메뉴</span></li>
 					</ul>
 				</div>
 				<div id="search-box">
@@ -187,31 +123,24 @@
 					<a href="#"><i class="fas fa-search fa-2x"></i></a>
 					</div>
 				</div>
-				<div id="nav1-list">시스템공통 바꾸기</div>
-		<div id="nav3">
-			<ul><span>▼ </span>게시판관리
-				<li>- 리스트1</li>
-				<li>- 리스트2</li>
-				<li>- 리스트3</li>
-				<li>- 리스트4</li>
-			</ul>
-			<ul><span>▼ </span>기본설정
-				<li>- 리스트1</li>
-				<li>- 리스트2</li>
-			</ul>
-		</div>
+				<div id="nav1-list">시스템공통</div>
+				<div id="nav3">
+					<ul><span>▼ </span>게시판관리
+						<li><a href="#">- 공지사항</a></li>
+						<li><a href="#">- 문의사항</a></li>
+						<li><a href="#">- 자유게시판</a></li>
+						<li><a href="#">- 강의리스트</a></li>
+					</ul>
+					<ul><span>▼ </span>인사관리
+						<li><a href="#">- 직원관리</a></li>
+						<li><a href="#">- 교수관리</a></li>
+						<li><a href="#">- 학생관리</a></li>
+					</ul>
+				</div>
 		</div>
 </header>
 <section>
-	<style>
-		.Onclick1{
-			background-color:#005698;
-		}
-		.Offclick1{
-			background-color: #033e6b;
-		}
-	</style>
-	
+<div id="main-background-img">
 	<script>
 		$(document).ready(function(){
 			$(".nav-box1").hide();
@@ -222,27 +151,19 @@
 				$(this).children(".list1").css('color','#0a4a9b').css('textDecoration','underline');
 				$(this).children(".nav-box1").show();
 			});
-			
 			$(".nav-box1>li").click(function(){
-				console.log("눌렀지롱");
+				
 			})
-			//nav2구현해야함
-			
+			//공통 - 마이메뉴 네비바
 			$("#nav2>li").hover(function(){
 				$(this).css('color','white');
 			},function(){
-				$(this).css('color','#6c839b');
 			});
-			
 			$("#nav2>li").click(function(){
-				alert("오잉");
+				$("#nav2>li").removeClass('Onclick1');
+				
 				$(this).addClass('Onclick1');
 			})
-			
-			
-			
-			
-			
 			//왼쪽 리스트네비바 구현
 			$("#nav3>ul>li").hide();
 				$("#nav3>ul").hover(function(){
@@ -252,28 +173,59 @@
 				});
 				$("#nav3>ul").click(function(){
 					$(this).children('li').toggle();
-				})
-				
-				
-				
-				
+				});
 				$("#nav3>ul>li").hover(function(){
 					$(this).parent('ul').css('backgroundColor','#798289');
 					$(this).css('backgroundColor','black');
 				},function(){
 					$(this).css('backgroundColor','#3a4450');
-				});
+			});	
+			$("#nav1-list").hide();
+//			$("#side-nav").hide();
+			
+			$(".data1").click(function(){
+				var tab2 = $(this).parent().parent().prev().html();
+				var tab1 = $(this).html();
+				$("#search-box,#nav1-list,#nav3").show();
+				$("#nav1-list").html(tab1);
+				$("#nav2").children().eq(0).html(tab2);
+			});
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			
 			
 			
 		});
 	</script>
-	
-	
-	
+</div>	
 </section>
 <footer>
-	<div style="width:1920px; height: 30px; background-color:#e8e9ea; float: left;"></div>
+	<div style="width:100%; height: 30px; background-color:#e8e9ea; float: left;"></div>
 </footer>
 </body>
 </html>

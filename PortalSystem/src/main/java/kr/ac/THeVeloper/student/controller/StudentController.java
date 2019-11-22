@@ -1,5 +1,10 @@
 package kr.ac.THeVeloper.student.controller;
 
-public class StudentController {
+import org.springframework.stereotype.Controller;
 
+@Controller
+public class StudentController {
+	
+	
+	
 }

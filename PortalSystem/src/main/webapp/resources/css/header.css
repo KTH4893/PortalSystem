@@ -1,0 +1,62 @@
+@charset "UTF-8";
+#nav1{margin: 0 auto;	padding-left: 0px; padding-top: 20px;}
+	#nav1>li{border: 0px solid black; width: 80px; height: 20px; line-height: 20px;
+		list-style: none; float: left; color:#7b7d7e; text-align: center; margin-left: 20px; }
+	#nav1-box1{	margin: 0 auto; border: 1px solid black; width: 100px; height: 50px; background-color: white;
+		padding: 0; margin-top: 10px; position: absolute;}
+	#nav1-box1>li{	color: black; list-style: none; text-align: left; padding-left: 10px; padding-bottom: 5px;
+		font-size: 12px;}
+	.cursors{cursor: pointer;}
+	#nav1-box2{	margin: 0 auto; border: 1px solid black; width: 80px; height: 25px; background-color: white;
+		padding: 0; margin-top: 10px; line-height: 25px; margin-left: 10px; padding-left: 5px; position: absolute;}
+	#nav1-box2>li{color: black; list-style: none; text-align: left; padding-left: 10px; padding-bottom: 5px;
+		font-size: 12px;}
+	#nav1-box3{	margin: 0 auto; border: 1px solid black; width: 80px; height: 25px; background-color: white;
+		padding: 0; margin-top: 10px; line-height: 25px; margin-left: 10px; padding-left: 5px; position: absolute;}
+	#nav1-box3>li{	color: black; list-style: none; text-align: left; padding-left: 10px; padding-bottom: 5px;
+		font-size: 12px; }
+	.clickOn{text-decoration: underline; color: #0a4a9b;}
+	.search1{width: 97%; margin-top: 2px; padding-top: 1px; padding-bottom: 2px; height: 28px; margin-left: 2px;
+		border: 0;}
+	.logotext{color:#7b7d7e; font-weight: bold; margin: 0 auto; padding: 0; border: 0px solid blue;
+		float: left; padding-top: 5px;	padding-bottom: 5px; width: 100%; text-align: center;}	
+	#nav2{padding: 0;	margin: 0 auto; }
+	#side-box li{list-style: none;width: 48%; float: left; text-align: center; height: 100%; line-height: 30px;
+		font-size: 13px; border: 0px solid black; padding: 1px; }
+	#side-box{width: 100%; height: 35px; border: 0px solid red; background-color: #033e6b; float:left; color: #6c839b;
+	}
+	a{text-decoration: none; color: white; cursor: inherit;}
+	#header{width: 100%; height: 65px; border: 0px solid black;}
+	#logo{width: 10%; height: 100%; border: 0px solid red; float: left; background-color: #e9f3fc;}
+	#logo-box1{	width: 30%;height:100%;float: left;	background-size: cover;
+		background-image: url(/resources/img/header/THeVeloperLogo2.jpg);}
+	#logo-box2{	width: 65%; height:100%;float: left; border: 0px solid red;	}
+	#header-box{width: 90%; height: 100%; border: 0px solid green;float: left;	}
+	#header-box-box1{width: 70%; height: 100%; background-color:#e9f3fc; float: left;}
+	#header-box-box2{width: 30%; height: 100%; background-color: #e9f3fc; float: left; text-align: right;}
+	#login-info{font-size: 8px; }
+	#user-info{	height: 25px; border: 1px solid #0f3668; margin-top: 10px; float: left; width: 30%; background-color: white;border-radius: 20px 0 0 20px; font-size: 12px; text-align: left; padding-left: 10px; line-height: 25px;	}
+	.logout-btn{width: 8%; height: 25px; float: left; border: 1px solid #0f3668; margin-top: 10px; border-radius: 0 20px 20px 0;background-color: #0f3668; text-align: center;}
+	#nav3>ul{padding: 0;margin: 0px; color: #d3ecff; font-size: 14px; }
+	#nav3>ul>li{list-style: none; padding-left: 30px; background-color:#3a4450;border: 0px solid black;	}
+	#nav3{	width: 100%; height: auto; border: 0px solid red; float: left; cursor: pointer;	}
+	#info-blank{width: 59%; height: 25px; float: left; border: 0px solid black; margin-top: 10px;}
+	#side-nav{width: 11%; height: 985px; border: 0px solid blue; float: left; background-color: #005698;}
+	#search-box{width: 100%; height: 35px; border: 0px solid red; float:left;}
+	#search-box-box1{width: 80%;height: 100%; background-color: #005698; float: left;}
+	#search-box-box2{width: 20%;height: 100%; background-color:white; float: left; color: #6b6b6e;}
+	#nav1-list{	width: 100%; height: 25px; border: 0px solid red; background-color: #c0c7d3; 
+		float:left; color:#183150; font-size: 12px; font-weight: bold; text-align: center; line-height: 25px;}
+	body{margin: 0 auto;}
+	#main-background-img{border: 0px solid red; width: 89%; height: 950px; float: left; margin-top : 35px;
+		background-image: url(/resources/img/header/myLogo_highquality.png);
+		background-repeat: no-repeat; background-position: center center; background-size: 1000px 1000px;}
+	.Onclick1{	background-color:#005698;color: white;}
+	#header-box-box3{
+		width: 100%; height: 35px; border: 0px solid black; float: left; background-color: #e9f3fc;
+	}
+	#search-icon{
+		color: black;
+	}
+	
+	
