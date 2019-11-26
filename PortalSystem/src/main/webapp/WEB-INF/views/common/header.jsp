@@ -79,16 +79,13 @@
 					</ul>
 					<ul><span>▼ </span>인사관리
 						<li><a href="#">- 직원관리</a></li>
-						<li><a href="#">- 교수관리</a></li>
+						<li><a href="/toProfManage.do">- 교수관리</a></li>
 						<li><a href="#">- 학생관리</a></li>
 					</ul>
 				</div>
 		</div>
 </header>
-<section>
-<div id="main-background-img">
-
-
+<section id="main-background">
 	<script>
 	$(document).ready(function(){
 		$(".nav-box1").hide();

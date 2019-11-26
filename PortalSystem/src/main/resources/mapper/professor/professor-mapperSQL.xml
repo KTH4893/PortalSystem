@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="professor">
+	<select id="professorList" resultType="Professor">
+		SELECT a.id,a.addr,a.email,a.age,a.job,a.phone,
+			a.enroll_date AS enrollDate,
+			a.name,
+			a.gender,
+			b.depart_detail AS departDetail,
+			b.status
+			 FROM MEMBER a
+			 JOIN PROFESSOR b
+			 ON a.ID = b.ID
+	</select>
+
+</mapper>
